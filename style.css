@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&family=Roboto&display=swap');
+header{
+    display: flex;
+}
+body{
+    max-width: 1920px;
+
+}
+.logo{
+    width: 130px;
+    margin-top: 30px;
+    margin-left: 140px;
+    display: flex;
+    margin-bottom: 25px;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+}
+.line1{
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+    display: none;
+}
+.line2{
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+    display: none;
+}
+.line3{
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+    display: none;
+}
+.Menu{
+    margin-top: 36px;
+    margin-left: 830px;
+    display: flex;
+    margin-bottom: 25px;
+}
+main{
+    position: relative;
+    display: inline-block;
+}
+.Painel{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+h1{
+    position: absolute;
+    top: 13%;
+    left: 140px;
+    font-size: 70px;
+    color: white;
+}
+h2{
+    position: absolute;
+    top: 20%;
+    left: 140px;
+    font-size: 35px;
+    color: white;
+}
+.conteúdo{
+    display: flex;
+    justify-content: space-around;
+}
+.Erva-mate{
+    width: 398px;
+    height: 398px;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 60px;
+}
+.pão-de-queijo{
+    width: 398px;
+    height: 398px;
+    display: flex;
+    margin-top: 60px;
+}
+.muance{
+    width: 398px;
+    height: 398px;
+    display: flex;
+    margin-top: 60px;
+    
+}
+.telas{
+    width: 398px;
+    height: 398px;
+    display: flex;
+    margin-top: 60px;
+}
+.fileira2{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+.Clinica{
+    width: 398px;
+    height: 398px;
+    display: flex;
+    margin-left: 10px;
+}
+.Caneca{
+    width: 398px;
+    height: 398px;
+    display: flex;
+}
+
+.Computador{
+    width: 398px;
+    height: 398px;
+    display: flex;
+}
+.Natfit{
+    width: 398px;
+    height: 398px;
+    display: flex;
+}
+.fileira3{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+.Telefone{
+    width: 398px;
+    height: 398px;
+    display: flex;
+    margin-left: 10px;
+}
+.Dribble{
+    width: 398px;
+    height: 398px;
+    display: flex;
+}
+.Câmeras{
+    width: 398px;
+    height: 398px;
+    display: flex;
+}
+.Cartões-postais{
+    width: 398px;
+    height: 398px;
+    display: flex;
+}
+footer{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+.Redes-sociais{
+    display: flex;
+    margin-top: 86px;
+    margin-left: 35px;
+    justify-content: space-around;
+    width: 25%;
+}
+.copyright{
+    display: flex;
+    margin-top: 86px;
+    margin-left: 200px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    margin-left: 30px;
+    width: 50%;
+}
+
+
+
+@media (max-width: 1630px){
+    .conteúdo,.fileira2,.fileira3{
+        flex-direction: column;
+        align-items: center;
+    }
+    .Menu{
+        margin-left: 500px;
+    }
+    h1{
+        position: absolute;
+        top: 237px;
+    }
+    h2{
+        position: absolute;
+        top: 400px;
+    }
+    .Erva-mate, .pão-de-queijo, .muance, .telas, .Clinica, .Caneca, 
+    .Computador, .Natfit, .Telefone, .Dribble, .Câmeras, 
+    .Cartões-postais{
+        width: 1000px;
+        height: 1000px;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 1350px){
+    .Menu{
+        display: none;
+    }
+    .logo{
+        margin-left: 200px;
+        display: flex;
+        flex-direction: row-reverse;
+        
+    }
+    .line1,.line2,.line3{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .Erva-mate, .pão-de-queijo, .muance, .telas, .Clinica, .Caneca, 
+    .Computador, .Natfit, .Telefone, .Dribble, .Câmeras, 
+    .Cartões-postais{
+        margin-top: 15px;
+    }
+
+}
+@media (max-width: 1130px){
+    h1{
+        position: absolute;
+        top: 170px;
+    }
+    h2{
+        position: absolute;
+        top: 320px;
+    }
+    .Erva-mate, .pão-de-queijo, .muance, .telas, .Clinica, .Caneca, 
+    .Computador, .Natfit, .Telefone, .Dribble, .Câmeras, 
+    .Cartões-postais{
+        width: 600px;
+        height: 600px;
+        margin-top: 15px;
+    }
+    footer{
+        display: block;
+    }
+    .Redes-sociais{
+        margin: 0 auto;
+        margin-top: 80px;
+        background: #7FDBD4;
+        display: flex;
+        justify-content: space-around;
+        width: 450px;
+        border-radius: 2px;
+
+    }
+}
