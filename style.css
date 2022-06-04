@@ -19,31 +19,9 @@ body{
     display: flex;
     margin-bottom: 25px;
 }
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: black;
-    margin: 8px;
-}
-.line1{
-    width: 32px;
-    height: 2px;
-    background: black;
-    margin: 8px;
-    display: none;
-}
-.line2{
-    width: 32px;
-    height: 2px;
-    background: black;
-    margin: 8px;
-    display: none;
-}
-.line3{
-    width: 32px;
-    height: 2px;
-    background: black;
-    margin: 8px;
+.menu-mobile{
+    height: 50px;
+    width: 50px;
     display: none;
 }
 .Menu{
@@ -182,7 +160,17 @@ h5{
     margin-left: 30px;
     width: 50%;
 }
-
+.topo{
+    height: 25px;
+    width: 68px;
+    border-radius: 2px;
+    border: 3px solid black;
+    background: rgb(85, 33, 33);
+    color: gray;
+    font-size: 20px;
+    display: none;
+    align-items: ;
+}
 
 
 @media (max-width: 1630px){
@@ -210,18 +198,38 @@ h5{
     }
 }
 @media (max-width: 1350px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        margin-right: 800px;
+    }
     .Menu{
         display: none;
     }
     .logo{
-        margin-left: 200px;
+        margin-left: 0px;
         display: flex;
-        flex-direction: row-reverse;
+        justify-content: flex-start;
         
     }
-    .line1,.line2,.line3{
+    .menu2{
+        background: black;
+        width: 600px;
+        height: 100%;
         display: flex;
-        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .menu-mobile{
+        display: flex;
+        margin-left: 400px;
+
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 25px;
     }
     .Erva-mate, .pão-de-queijo, .muance, .telas, .Clinica, .Caneca, 
     .Computador, .Natfit, .Telefone, .Dribble, .Câmeras, 
@@ -230,7 +238,31 @@ h5{
     }
 
 }
-@media (max-width: 1130px){
+@media (max-width: 1200px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        margin-right: 700px;
+    }
+    .logo{
+        margin-left: 0px;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .menu2{
+        background: black;
+        width: 600px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu-mobile{
+        display: flex;
+        margin-left: 400px;
+
+    }
     h1{
         position: absolute;
         top: 170px;
@@ -259,4 +291,277 @@ h5{
         border-radius: 2px;
 
     }
+}
+
+@media (max-width: 1080px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        margin-right: 500px;
+    }
+    .logo{
+        margin-left: 0px;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .menu2{
+        background: black;
+        width: 600px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu-mobile{
+        display: flex;
+        margin-left: 400px;
+
+    }
+}
+@media (max-width: 900px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        margin-right: 300px;
+    }
+    .logo{
+        margin-left: 0px;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .menu2{
+        background: black;
+        width: 600px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu-mobile{
+        display: flex;
+        margin-left: 380px;
+
+    }
+    h1{
+        position: absolute;
+        top: 120px;
+        font-size: 35px;
+    }
+    h2{
+        position: absolute;
+        top: 210px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 700px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        margin-right: 100px;
+    }
+    .logo{
+        margin-left: 0px;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .menu2{
+        background: black;
+        width: 600px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu-mobile{
+        display: flex;
+        margin-left: 380px;
+
+    }
+    .Painel{
+        height: 300px;
+        width: 100%;
+    }
+    .Erva-mate, .pão-de-queijo, .muance, .telas, .Clinica, .Caneca, 
+    .Computador, .Natfit, .Telefone, .Dribble, .Câmeras, 
+    .Cartões-postais{
+        width: 300px;
+        height: 300px;
+        margin-top: 15px;
+    }
+}
+@media (max-width: 676px){
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+   .copyright{
+       margin-left: 100px;
+   }
+
+}
+@media (max-width: 600px){
+    .Painel{
+        height: 400px;
+        width: 100%;
+    }
+    h1{
+        position: absolute;
+        top: 150px;
+        left: 80px;
+        width: 400px;
+    }
+    h2{
+        position: absolute;
+        top: 250px;
+        left: 80px;
+    }
+}
+@media (max-width: 576px){
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        margin-right: 50px;
+    }
+    .logo{
+        margin-left: 0px;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .menu2{
+        background: black;
+        width: 600px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu-mobile{
+        display: flex;
+        margin-left: 430px;
+
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+   .copyright{
+       margin-left: 10px;
+       display: flex;
+       flex-direction: column;
+       margin-top: 0px;
+   }
+   h4{
+       margin-left: 30px;
+   }
+   .Painel{
+    height: 400px;
+    width: 100%;
+}
+h1{
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    width: 400px;
+}
+h2{
+    position: absolute;
+    top: 250px;
+    left: 30px;
+}
+}
+@media (max-width: 476px){
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 300px;
+    }
+   .Redes-sociais{
+       width: 350px;
+       display: flex;
+       margin-left: 20px;
+   }
+    .copyright{
+       margin-left: 10px;
+       display: flex;
+       flex-direction: column;
+   }
+   h4{
+       margin-left: 30px;
+   }
+}
+@media (max-width: 453px){
+   h1{
+    position: absolute;   
+    width: 250px;
+    font-size: 40px;
+    left: 50px;
+    top: 60px;
+   }
+   h2{
+    position: absolute;   
+    margin-top: 80px;
+    font-size: 20px;
+    left: 50px;
+    top: 150px;
+}
+.Painel{
+    height: 300px;
+    width: 100%;
+}
+@media (max-width: 396px){
+
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        margin-right: 10px;
+    }
+    .logo{
+        margin-left: 0px;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    .menu2{
+        background: black;
+        width: 600px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu-mobile{
+        display: flex;
+        margin-left: 470px;
+
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 300px;
+    }
+   .Redes-sociais{
+       width: 300px;
+       display: flex;
+       margin-left: 10px;
+   }
+    .copyright{
+       margin-left: 10px;
+       display: flex;
+       flex-direction: column;
+   }
+   h4{
+       margin-left: 30px;
+}
 }
